@@ -38,11 +38,12 @@
 
         <asset:javascript src="jquery-2.1.3.js"/>
         %{--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>--}%
-        <asset:javascript src="angular.min.js"/>
-        <asset:javascript src="ui-bootstrap-tpls-0.12.1.min.js"/>
-        <asset:javascript src="bootstrap.js"/>
-        <asset:javascript src="recipeappy.js"/>
-        <asset:javascript src="/viewcontrollers/ingredients.js"/>
+        <asset:javascript src="application.js"/>
+        %{--<asset:javascript src="angular.min.js"/>--}%
+        %{--<asset:javascript src="ui-bootstrap-tpls-0.12.1.min.js"/>--}%
+        %{--<asset:javascript src="bootstrap.js"/>--}%
+        %{--<asset:javascript src="recipeappy.js"/>--}%
+        %{--<asset:javascript src="/viewcontrollers/ingredients.js"/>--}%
 
     </body>
 </html>

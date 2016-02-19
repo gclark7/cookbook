@@ -6,6 +6,10 @@
 
     </head>
     <body>
+        <div ng-controller="messagesModalController">
+
+
+        </div>
         <div class="col-lg-12" ng-controller="manageIngredients">
 
                 <div id="createIngredientPane">

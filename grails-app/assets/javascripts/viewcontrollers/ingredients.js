@@ -1,7 +1,7 @@
 /**
  * Created by gcDataTechnology on 1/22/2016.
  */
-recipeApp.controller("manageIngredients", function($scope, $http, $modal,IngredientEditor) {
+recipeApp.controller("manageIngredients", ['$scope', '$http', '$modal', 'IngredientEditor', function($scope, $http, $modal,IngredientEditor) {
 //recipeApp.controller("manageIngredients", function($scope,$http,$modal) {
 //     $scope.modalController = $modal;
     $scope.clk = function(){
@@ -41,9 +41,9 @@ recipeApp.controller("manageIngredients", function($scope, $http, $modal,Ingredi
     //
     //    alert("do nothig");
     //}
-});
+}]);
 
-recipeApp.factory('IngredientEditor', function($http, $modal){
+recipeApp.factory('IngredientEditor', ['$http', '$modal', function($http, $modal){
 
     var editor = function(){
         this.ingredientToEdit = {'id':0,'ingredientname':'needAName','ingredienttype':0};
@@ -98,7 +98,7 @@ recipeApp.factory('IngredientEditor', function($http, $modal){
 //
     return editor;
 //
-});
+}]);
 
 
 
@@ -106,7 +106,7 @@ recipeApp.factory('IngredientEditor', function($http, $modal){
 // recipeApp.controller('editIngredientModalController', function($scope, $http, $modalInstance, myid, myname, mytype){
 //recipeApp.controller('editIngredientModalController', function($scope,$http) {
 //recipeApp.controller('editIngredientModalController', function($scope, $http, myid, myname, mytype){
-recipeApp.controller('editIngredientModalController', function($scope, $http, $modalInstance, editIngredient) {
+recipeApp.controller('editIngredientModalController', ['$scope', '$http', '$modalInstance', 'editIngredient', function($scope, $http, $modalInstance, editIngredient) {
 //    //$scope.id = ingredient.id;
 //    //$scope.ingredientname = ingredient.name;
 //    //$scope.ingredienttype = ingredient.type;
@@ -134,4 +134,4 @@ recipeApp.controller('editIngredientModalController', function($scope, $http, $m
          console.log($scope.ingredientToEdit);
     };
 //
-});
+}]);

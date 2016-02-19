@@ -3,11 +3,12 @@
  */
 var recipeApp = angular.module('recipeApp',['ui.bootstrap']);
 
-recipeApp.controller('testies',function($scope,$http){
+recipeApp.controller('messagesModalController', function($scope, $http){
 
-    $scope.pushem= function(){
+    //$scope.message = message;
+    $scope.pushem= function(message){
 
-        alert('yeppers');
+        alert(message);
     }
 
 
